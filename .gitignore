@@ -1,0 +1,46 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Runtime / generated data
+storage/
+dist/
+logs/
+*.log
+*.db
+*.sqlite
+*.tmp
+
+# Secrets / local config
+.env
+.env.*
+*.pem
+*.key
+*.crt
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+
+# Private project artifacts
+data/
+data/geoip/
+GeoLite2-*
+audit_snapshots/
+runtime/
+reports/
+exports/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
