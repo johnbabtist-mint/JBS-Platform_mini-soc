@@ -22,9 +22,9 @@ The goal of this repository is to show what was built, how the system is structu
 
 ---
 
-## Live Demo
+## Public Demo
 
-The project has a public demo page:
+Public demo page: https://www.johnnyserver.pl
 
 **https://www.johnnyserver.pl**
 
