@@ -57,9 +57,9 @@ The public demo and this repository intentionally avoid exposing private runtime
 
 A short public-safe demo showing how the JBS Mini-SOC uses a local AI analyst workflow to summarize a security event and produce an operator decision.
 
-[![Local AI Analyst Demo](screenshots/03-ai-analyst-interface.png)](media/jbs-ai-analyst-decision-demo.mp4)
+[![Local AI Analyst Demo](screenshots/03-ai-analyst-interface.png)](https://raw.githubusercontent.com/johnbabtist-mint/JBS-Platform_mini-soc/main/media/jbs-ai-analyst-decision-demo.mp4)
 
-[Watch the local AI Analyst demo](media/jbs-ai-analyst-decision-demo.mp4)
+[Watch the local AI Analyst demo](https://raw.githubusercontent.com/johnbabtist-mint/JBS-Platform_mini-soc/main/media/jbs-ai-analyst-decision-demo.mp4)
 
 ## Screenshots
 
