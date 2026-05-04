@@ -243,3 +243,36 @@ I built and operated a self-hosted Python/FastAPI security intelligence platform
 The project includes deterministic attack-source decisions, live attack intelligence, historical analytics, redacted investigation views, local AI analyst support, validation tooling and automated tests.
 
 My main focus was auditability, deterministic processing, backend architecture, security reasoning, safe refactoring and validation before release.
+
+---
+
+## Teacher Queue — Automated AI-Assisted Security Workflow
+
+While building Teacher Queue, I extended JBS Security Platform with an automated AI-assisted security workflow that combines a local Llama model, a classic ML model, log data, and backend safety rules.
+
+The system runs automatically in the background: it periodically refreshes security data, builds an up-to-date dataset, runs model inference, generates advisory output, and prepares a list of candidates for the Teacher Queue.
+
+Llama acts as a local AI Analyst that helps interpret suspicious behavior and describe threats, while the ML model classifies candidates based on attack history, SNAP analytics, runtime evidence, and infrastructure-related features.
+
+As a result, the application is no longer just a dashboard for manually reviewing logs. It has become a system that analyzes the situation on its own, extracts the most important signals, and shows the operator the most suspicious IP addresses.
+
+The AI learns my environment through historical data, features from real events, and operator feedback, where objects can be marked as confirmed threat, background noise, or requires review.
+
+These decisions are fed into a controlled dataset-building process, so future versions of the model can become better at distinguishing real threats from normal internet background noise.
+
+Teacher Queue displays candidates with the model prediction, confidence score, severity, evidence summary, and the most important features that influenced the AI/ML decision.
+
+The most important part is that, despite automated AI analysis, the AI does not have direct control over the firewall. It recommends and prioritizes, but it does not block anything on its own.
+
+Before any action, the backend performs a dry-run preflight, checks trusted and self-owned infrastructure, verifies the current block state, and only shows a safe UFW command preview without executing it from the UI.
+
+The final result is a background-running defensive system: the AI observes the server, learns from history and operator decisions, selects the most important threats, and the controlled backend ensures that no block can be executed accidentally or automatically.
+
+### Teacher Queue Overview
+
+![Teacher Queue Overview](screenshots/teacher-queue-overview-redacted.png)
+
+### Backend Dry-Run Preflight
+
+![Teacher Queue Preflight](screenshots/teacher-queue-preflight-redacted.png)
+
